@@ -1,0 +1,426 @@
+/*FONTS*/
+@font-face {
+    font-family: "Artegra Sans Extended";
+    src: url(../src/fonts/ArtegraSansExBlack.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Mariupol";
+    src: url(../src/fonts/Mariupol-Regular.woff2) format("woff2");
+}
+
+/*BREAK BROWSER STYLES*/
+:root {
+    --background-mobile: url(./images/bg-mobile.png);
+    --background-tablet: url(./images/bg-tablet.png);
+    --background-laptop: url(./images/bg-laptop.png);
+    --background-desktop: url(./images/bg-desktop.png);
+
+    --main-color: #FFFFFF;
+    --blue-color: #9FC0FF;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 3%;
+    line-height: 1;
+    background: var(--background-desktop) no-repeat center center fixed;
+    background-size: 100% 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*MY QUICK STYLES*/
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.justify-content-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.justify-content-between {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.align-items-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/*MAIN STYLES*/
+header {
+    width: 100%;
+    position: relative;
+    top: 0.9em;
+    border-bottom: 1px solid #9FC0FF;
+}
+
+.container {
+    width: 100%;
+}
+
+/*LOGO*/
+.logo {
+    margin-bottom: 0.9em;
+}
+
+.logo-icon {
+    width: 3.8em;
+    height: 3.8em;
+}
+
+.logo-text {
+    width: 13em;
+    height: 1.68em;
+}
+
+/*NAV*/
+.nav-link-list {
+    width: 100%;
+}
+
+.nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Mariupol, sans-serif;
+    fill: var(--main-color);
+    color: var(--main-color);
+}
+
+.nav-link:hover {
+    fill: var(--blue-color);
+    color: var(--blue-color);
+}
+
+.nav-link-list li {
+    margin-right: 2.6em;
+}
+
+.nav-link-list li:last-of-type {
+    margin-right: 0;
+}
+
+.nav-icon {
+    display: block;
+    margin-right: 6px;
+    width: 0.8em;
+    height: 0.8em;
+}
+
+.nav-text {
+    height: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 140%;
+}
+
+/*MAIN SECTION*/
+main {
+    margin-top: calc(100% * 2 / 17);
+}
+
+.main-section {
+    width: 50%;
+    position: relative;
+}
+
+/*MAINTANCE SECTION*/
+.maintaince-icon {
+    width: calc(100% * 1 / 1.4);
+    height: auto;
+}
+
+.big-gear {
+    width: calc(100% * 0.14);
+    height: auto;
+    left: calc(100% * 0.11);
+    top: calc(100% * 0.65);
+}
+
+.small-gear {
+    width: calc(100% * 0.125);
+    height: auto;
+    left: calc(100% * 0.245);
+    top: calc(100% * 0.45);
+}
+
+/*LOGO BG*/
+.square {
+    width: calc(100% * 2 / 11);
+    top: calc(100% * 1 / 5);
+    left: calc(100% * 5 / 11);
+}
+
+.square-logo {
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 20px 34px 64px rgba(0, 0, 0, 0.3);
+            box-shadow: 20px 34px 64px rgba(0, 0, 0, 0.3);
+}
+
+/*FLAG SECTION*/
+.title-section {
+    width: 50%;
+}
+
+.wrapper {
+    width: calc(100% * 2 / 3);
+    margin-top: 7em;
+    padding: 1.2em 0 1.2em 0;
+    border-top: 1px solid #9FC0FF;
+    border-bottom: 1px solid #9FC0FF;
+}
+
+.flag {
+    display: inline-block;
+    width: 16%;
+    height: 2em;
+    margin-top: 1em;
+    margin-right: 1.6em;
+    -webkit-box-shadow: 20px 34px 64px rgba(0, 0, 0, 0.3);
+            box-shadow: 20px 34px 64px rgba(0, 0, 0, 0.3);
+}
+
+.title-text {
+    color: #FFFFFF;
+    font-family: 'Artegra Sans Extended', sans-serif;
+    font-size: 1.6em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+@media all {
+    .big-gear {
+        display: inline-block;
+        -webkit-animation: 10s infinite linear alternate rotate;
+                animation: 10s infinite linear alternate rotate;
+        -webkit-transform-origin: 50% 50%;
+            -ms-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+    }
+
+    .small-gear {
+        display: inline-block;
+        animation: 10s infinite linear alternate-reverse rotate;
+        -webkit-transform-origin: 50% 50%;
+            -ms-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    header nav {
+        width: 100%;
+        margin: 0;
+        position: fixed;
+        bottom: 0 !important;
+        left: 0 !important;
+        top: initial;
+    }
+
+    .nav-link-list {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .nav-link {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .maintaince-icon {
+        width: 100%;
+    }
+
+    .big-gear {
+        width: calc(100% * 0.2);
+        height: auto;
+        left: calc(100% * 0.165);
+    }
+
+    .small-gear {
+        width: calc(100% * 0.165);
+        height: auto;
+        left: calc(100% * 0.35);
+    }
+
+    main .container .main-section:last-child {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-image: var(--background-mobile);
+    }
+
+    .nav-link-list {
+        padding: 0 0.95em 1em 0.95em;
+    }
+
+    .nav-icon {
+        width: 2.1em;
+        height: 2.1em;
+    }
+
+    .nav-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8em;
+        line-height: 140%;
+    }
+
+    .main-section {
+        width: 100%;
+        margin-top: calc(100% * 1 / 10);
+    }
+
+    .title-section {
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 100%;
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background: var(--background-laptop) no-repeat center center fixed;
+        background-size: 200% 200%;
+        padding: 0 5%;
+    }
+
+    .nav-link-list {
+        padding: 0 5% 3em 5%;
+    }
+
+    .nav-icon {
+        width: 4em;
+        height: 4em;
+    }
+
+    .nav-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6em;
+        line-height: 140%;
+    }
+
+    .main-section {
+        width: 70%;
+        margin-top:calc(100% * 2 / 90);
+    }
+
+    .title-section {
+        width: 70%;
+    }
+
+    .wrapper {
+        width: 70%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nav-text {
+        font-size: 1em;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        padding: 0 15%;
+    }
+}
+
+/*ADDITIONAL STYLES AND ANIMATIONS*/
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
