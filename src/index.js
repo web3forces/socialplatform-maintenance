@@ -1,4 +1,4 @@
-let bodyDiv = $("body");
+let bodyDiv = $("html");
 
 bodyDiv.mousemove(function(e) {
   let x = e.pageX - $(this).offset().left - $(this).width() / 2;
