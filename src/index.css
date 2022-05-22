@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 /*FONTS*/
 @font-face {
     font-family: "Artegra Sans Extended";
@@ -219,8 +226,10 @@ main {
     height: 100%;
     background: url("./images/noise.png");
     background-blend-mode: overlay, normal;
-    box-shadow: 20px 34px 64px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(26px);
+    -webkit-box-shadow: 20px 34px 64px rgba(0, 0, 0, 0.3);
+            box-shadow: 20px 34px 64px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(26px);
+            backdrop-filter: blur(26px);
 }
 
 .logo-square {
@@ -252,10 +261,11 @@ main {
     display: inline-block;
     width: 16%;
     height: 2em;
-    margin-top: 1em;
+    margin-top: 0.6em;
     margin-right: 1.6em;
     -webkit-box-shadow: 20px 34px 64px rgba(0, 0, 0, 0.3);
     box-shadow: 20px 34px 64px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
 }
 
 .title-text {

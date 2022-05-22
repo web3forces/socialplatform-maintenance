@@ -1,6 +1,6 @@
-let bodyDiv = $("html");
+let html = $("html");
 
-bodyDiv.mousemove(function(e) {
+html.mousemove(function(e) {
   let x = e.pageX - $(this).offset().left - $(this).width() / 2;
   let y = e.pageY - $(this).offset().top - $(this).height() / 2;
 
@@ -13,7 +13,7 @@ bodyDiv.mousemove(function(e) {
   });
 });
 
-bodyDiv.mouseleave(function(e) {
+html.mouseleave(function(e) {
     let target = $(e.target);
 
     if( !target.is("div.layer")) {
